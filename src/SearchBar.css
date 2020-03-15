@@ -1,0 +1,19 @@
+.RightPane {
+    width: 25%;
+    height: 100%;
+    float: right;
+    background-color:whitesmoke;
+    border-collapse: collapse;
+    }
+
+input.search {
+    margin-top: 50px;
+    margin-left: 10px;
+    text-align: center;
+    border: 2px solid rgb(66, 65, 65);
+    width: 80%;
+    position: relative;
+    z-index: 2;
+    border-radius: 15px;
+    font-size: 1.2em
+}

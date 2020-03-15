@@ -1,0 +1,7 @@
+.LeftPane {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: whitesmoke;
+    border-collapse: collapse;
+  }

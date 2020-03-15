@@ -1,31 +1,38 @@
 import React, {Component} from 'react';
 import './App.css';
 import Card from './Card';
-import CardFlippingButton from './CardFlippingButton';
+import Header from './Header';
+import SearchBar from './SearchBar';
+import CareIndex from './CardIndex'
 
 class App extends Component {
   state ={
     id: 0,
-    front: "Red Herring",
-    back: "This phrase is used to describe something that provides a false or misleading clue, often in a detectie story",
+    phrase: "Red Herring",
+    description: "This phrase is used to describe something that provides a false or misleading clue, often in a detectie story",
     flipped: false
-  }
+   }
+   
   handleFlip =() => {
     this.setState(prevState=>{
-      return {
+      return {  
       flipped: !prevState.flipped
     }})
   }
   render(){
-    const {id, front, back, flipped} = this.state;
-    const values= {id, front, back, flipped};
+    const {id, phrase, description, flipped} = this.state;
+    const values= {id, phrase, description, flipped};
   return (
-    <div className="App">
-      <Card values = {values} />
-      <CardFlippingButton handleFlip={this.handleFlip} values={values}/>
+    <div className="CardContainer">
+     
+      <Header />
+      <CareIndex />
+      
+      <Card values = {values} handleFlip={this.handleFlip} />
+      <SearchBar />
     </div>
   );
-}
-}
+}}
+
 
 export default App;
