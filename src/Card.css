@@ -1,0 +1,22 @@
+.MiddlePane {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: whitesmoke;
+    text-align: center;
+    
+  }
+  .CardArea{
+      margin-top: 50px;
+      height:50%;
+      border: 2px solid rgb(66, 65, 65);
+      border-radius: 10px;
+      padding-top: 20px;
+      font-size: 1.2em;
+  }
+  .Controls {
+      margin-top:30px;
+  }
+  .btn {
+      padding:5px;
+  }
